@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mico</title>
+    
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -84,29 +85,36 @@
 
 
     
-    <section class="flex justify-between items-center w-10/12 px-10 py-10 mx-auto my-auto shadow-md mb-5">
-        <div >
-            <h2 class=" font-bold text-6xl mb-4">MICO<br><span class="text-[#63E6BE]">HOSPITAL</span></h2>
-            <p class="mb-8">When looking at its layout.The point of using Lorem ipsum is that it has a <br>more-or-less normal distributiion of letters,asopposed to</p>
-            <button class="btn btn-neutral w-40 text-center">contact Us</button>
+<section class="flex flex-col justify-start items-start w-full px-6 py-10 mx-auto shadow-md mb-5 
+lg:flex lg:flex-row lg:justify-between lg:items-center lg:px-40 ">
+  
+  <div class="mb-8 lg:mb-0">
+    <h2 class="font-bold text-5xl lg:text-6xl mb-4">
+      MICO<br><span class="text-[#63E6BE]">HOSPITAL</span>
+    </h2>
+    <p class="mb-8">
+      When looking at its layout, the point of using Lorem ipsum is that it has a
+      <br class="hidden lg:block">
+      more-or-less normal distribution of letters, as opposed to
+    </p>
+    <button class="btn btn-neutral w-40 text-center">Contact Us</button>
+  </div>
 
-        </div>
-        <div class="image mb-10">
-            <img src="images/slider-img.jpg" alt="">
+  <div class="image ">
+    <img src="images/slider-img.jpg" alt="Hospital" class="w-full max-w-md mx-auto lg:mx-0">
+  </div>
+</section>
 
-        </div>
 
-    </section>
-
-<div class="container mx-auto p-6 w-11/12 bg-white rounded-2xl shadow-2xl items-center justify-center">
+<section class=" book_apportment container mx-auto p-6 w-11/12 bg-white rounded-xl shadow-xl items-center justify-center">
     
-  <div class="bg-white p-6 rounded-2xl shadow-2xl">
-     <h2 class="font-bold text-3xl mb-4">Book <span class="text-[#63E6BE]">APPOINTMENT</span></h2>
+  <div class="bg-white p-6">
+     <h2 class="font-bold text-3xl mb-4 lg:items-center text-center">Book <span class="text-[#63E6BE]">APPOINTMENT</span></h2>
 
 
       <fieldset class="fieldset  rounded-xl w-xs p-4 ">
 
-<div class="flex gap-5">
+<div class="flex flex-col lg:flex-row gap-5 justify-center">
     <div>
             <label class="label">Patient Name</label>
   <input type="name" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-60" placeholder=" " />
@@ -167,21 +175,35 @@
     </p>
   </div>
 
+</section>
 
-    <section class="flex justify-between items-center w-10/12 px-10 py-10 mx-auto about_hospital mb-5">
-  <div class="flex justify-center">
-    <img src="images/about-img.jpg" alt="about" class="w-full max-w-md h-auto object-cover rounded-lg" />
+
+
+
+ <section class="flex flex-col justify-center items-center text-center w-10/12 px-6 py-10 mx-auto about_hospital mb-5 
+lg:flex-row lg:justify-between lg:items-center lg:text-left lg:px-10">
+  
+  <div class="flex justify-center mb-8 lg:mb-0 lg:w-1/2">
+    <img 
+      src="images/about-img.jpg" 
+      alt="about" 
+      class="w-full max-w-md h-auto object-cover rounded-lg" 
+    />
   </div>
-  <div class="">
-    <h2 class="font-bold text-3xl mb-4">About <span class="text-[#63E6BE]">Hospital</span></h2>
+
+  <div class="lg:w-1/2">
+    <h2 class="font-bold text-3xl mb-4">
+      About <span class="text-[#63E6BE]">Hospital</span>
+    </h2>
     <div class="space-y-2 mb-5">
-      <p>Has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
-      <p>Making it look like readable English. Many desktop publishing packages and web page editors.</p>
-      <p>Has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
+      <p>Has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+      Making it look like readable English. Many desktop publishing packages and web page editors.
+      Has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
     </div>
     <button class="btn btn-neutral w-40">Read More</button>
   </div>
 </section>
+
 
 <section class=" hosptal teatment">
     <h2 class="font-bold text-3xl mb-4 text-center">Hospital <span class="text-[#63E6BE]">Treatment</span></h2>
@@ -225,9 +247,12 @@
          <p class="text-gray-600 mb-4 leading-relaxed">alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything</p>
            <button class="btn btn-ghost text-[#00C6A9] font-semibold px-4">READ MORE</button>
     </div>
-   <div class="flex justify-end items-center">
-    <img src="images/treatment-side-img.jpg" alt="" class="w-full max-w-sm object-contain">
-  </div>
+  <div class="flex justify-end items-center sm:1/2 ">
+  <img 
+    src="images/treatment-side-img.jpg" 
+    alt="Treatment" 
+    class="w-full max-w-sm object-contain hidden lg:block ">
+</div>
     </div>
  
 </section>
