@@ -119,58 +119,48 @@ lg:flex lg:flex-row lg:justify-between lg:items-center lg:px-40 ">
      <h2 class="font-bold text-3xl mb-4 lg:items-center text-center">Book <span class="text-[#63E6BE]">APPOINTMENT</span></h2>
 
 
-      <fieldset class="fieldset  rounded-xl w-xs p-4 ">
+    <fieldset class="fieldset rounded-xl w-full lg:w-11/12 p-4 mx-auto">
+  <div class="flex flex-col lg:flex-row gap-5 justify-between lg:items-start">
 
-<div class="flex flex-col lg:flex-row gap-5 justify-center">
-    <div>
-            <label class="label">Patient Name</label>
-  <input type="name" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-60" placeholder=" " />
-  
-    <label class="label">Doctor's Name</label>
- <select 
-        class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-60"
-      >
+    <div class="flex flex-col gap-2">
+      <label class="label">Patient Name</label>
+      <input type="text" class="input border-2 border-[#0BAA92]  font-semibold text-[#0BAA92] w-full lg:w-100" placeholder=" " />
+
+      <label class="label">Doctor's Name</label>
+      <select class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-full lg:w-100">
+        <option disabled selected>normal Distribution</option>
+        <option>normal Distribution</option>
+        <option>normal Distribution</option>
+        <option>normal Distribution</option>
+      </select>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <label class="label">Department's Name</label>
+      <select class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-full lg:w-100">
         <option disabled selected>normal Distribution</option>
         <option>normal Distribution</option>
         <option>normal Distribution</option>
         <option>normal Distribution</option>
       </select>
 
-     </div>
+      <label class="label">Phone Number</label>
+      <input type="number" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-full lg:w-100" placeholder="XXXXXXXXXXX" />
+    </div>
 
+    <div class="flex flex-col gap-2">
+      <label class="label">Symptoms</label>
+      <input type="text" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-full lg:w-100" placeholder="" />
 
-     <div>
-          <label class="label">Department's Name
-</label>
- <select 
-        class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-60"
-      >
-        <option disabled selected>normal Distribution</option>
-        <option>normal Distribution</option>
-        <option>normal Distribution</option>
-        <option>normal Distribution</option>
-      </select>
+      <label class="label">Choose Date</label>
+      <input type="datetime-local" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-full lg:w-100" />
+    </div>
 
-      <label class="label">Phone Number
-</label>
-  <input type="number" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-60" placeholder="XXXXXXXXXXX" />
-     </div>
+  </div>
 
-
-     <div>
-  <label class="label">symptoms</label>
-  <input type="name" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-60 " placeholder="" />
-  <label class="label">Choose Date</label>
-  <input type="datetime" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-60 " placeholder="10-26-2025" />
-
-
-     </div>
- 
-</div>
-
- 
- <button class="btn btn-neutral w-40 text-center"> SUBMIT NOW</button>
-</div>
+  <div class="mt-5 text-center">
+    <button class="btn btn-neutral w-40">SUBMIT NOW</button>
+  </div>
 </fieldset>
 
 
@@ -223,7 +213,7 @@ lg:flex-row lg:justify-between lg:items-center lg:text-left lg:px-10">
 
     
   <div class=" bg-white p-4 rounded-lg shadow-md text-left">
-    <img src="images/t1.png" alt="" class="mb-4 mx-auto lg:mx-0 w-20 h-20 object-contain">
+    <img src="images/t1.png" alt="" class="mb-4  lg:mx-0 w-20 h-20 object-contain">
     <h2 class="font-bold mb-3 text-xl text-gray-800">Nephrologist Care</h2>
     <p class="text-gray-600 mb-4 leading-relaxed text-left">
       Alteration in some form, by injected humour or randomised words which don't look even slightly
