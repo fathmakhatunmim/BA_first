@@ -14,10 +14,10 @@
 </head>
 <body>
     <header>
-        <div class="flex gap-10 items-center px-30 py-5">
+        <div class=" flex flex-col gap-5 items-center lg:px-30 py-5 lg:flex-row lg:gap-10">
              <div class="flex items-center space-x-2">
   <i class="fa-solid fa-phone text-[#63E6BE]"></i>
-  <p>Call : +01 123455678990</p>
+  <p class=" ">Call : +01 123455678990</p>
 </div>
         <div class="flex items-center space-x-2">
             <i class="fa-solid fa-envelope" style="color: #63E6BE;"></i>
@@ -42,14 +42,17 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
-      <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
+      <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow mb-2">
         <li><a>HOME</a></li>
         <li><a>ABOUT</a></li>
         <li><a>TREATMENT</a></li>
         <li><a>DOCTORS</a></li>
         <li><a>TESTIMONIAL</a></li>
         <li><a>CONTACT US</a></li>
+    <button class="btn  mb-2 btn-ghost text-black bg-[#00C7AA]">LOGIN</button>
+    <button class="btn btn-ghost bg-[#00C7AA]">SIGN UP</button>
       </ul>
+      
     </div>
 
     <div class="flex items-center bg-white p-2 rounded">
@@ -59,7 +62,7 @@
 
  
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal text-white font-semibold">
+    <ul class="menu menu-horizontal text-white font-semibold px-20">
       <li><a>HOME</a></li>
       <li><a>ABOUT</a></li>
       <li><a>TREATMENT</a></li>
@@ -67,19 +70,23 @@
       <li><a>TESTIMONIAL</a></li>
       <li><a>CONTACT US</a></li>
     </ul>
-  </div>
-
- 
-
-  <div class="navbar-end ">
-
-     <i class="fa-solid fa-user" style="color: #fdfefe;"></i>
+    
+  <!-- <div class="navbar-end "> -->
+    <div>
+        <i class="fa-solid fa-user" style="color: #fdfefe;"></i>
     <button class="btn btn-ghost text-white">LOGIN</button>
       <i class="fa-solid fa-user" style="color: #fdfefe;"></i>
     <button class="btn btn-ghost text-white">SIGN UP</button>
     
     <i class="fa-solid fa-magnifying-glass" style="color: #fcfcfc;"></i>
+    </div>
+
+   
   </div>
+  
+</div>
+ 
+
 </div>
  </header>
 
@@ -211,7 +218,7 @@ lg:flex-row lg:justify-between lg:items-center lg:text-left lg:px-10">
 
 
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 px-5 py-5 mx-auto w-10/12 justify-end">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 px-5 py-5 mx-auto w-10/12 justify-end ">
   
 
     
@@ -260,25 +267,15 @@ lg:flex-row lg:justify-between lg:items-center lg:text-left lg:px-10">
 <section class="bg-[#63E6BE] w-full flex justify-center py-10">
   <div class="relative w-[90%] max-w-[900px]">
 
-    <button id="leftBtn"
-      class="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-[#0BAA92] hover:text-white transition">◀
-    </button>
-
-    
-    <div id="gallery" class="flex gap-5 overflow-x-hidden scroll-smooth">
-      <img src="images/team1.jpg" class="w-[280px] rounded-xl shadow-md flex-shrink-0" alt="">
-      <img src="images/team2.jpg" class="w-[280px] rounded-xl shadow-md flex-shrink-0" alt="">
-      <img src="images/team3.jpg" class="w-[280px] rounded-xl shadow-md flex-shrink-0" alt="">
-      <img src="images/team1.jpg" class="w-[280px] rounded-xl shadow-md flex-shrink-0" alt="">
-      <img src="images/team2.jpg" class="w-[280px] rounded-xl shadow-md flex-shrink-0" alt="">
-      <img src="images/team3.jpg" class="w-[280px] rounded-xl shadow-md flex-shrink-0" alt="">
+  <div id="gallery" class="flex gap-5 overflow-x-auto  snap-x snap-mandatory">
+      <img src="images/team1.jpg" class="w-full md:w-1/3 rounded-xl shadow-md flex-shrink-0 snap-center" alt="">
+      <img src="images/team2.jpg" class="w-full md:w-1/3 rounded-xl shadow-md flex-shrink-0 snap-center" alt="">
+      <img src="images/team3.jpg" class="w-full md:w-1/3 rounded-xl shadow-md flex-shrink-0 snap-center" alt="">
+      <img src="images/team1.jpg" class="w-full md:w-1/3 rounded-xl shadow-md flex-shrink-0 snap-center" alt="">
+      <img src="images/team2.jpg" class="w-full md:w-1/3 rounded-xl shadow-md flex-shrink-0 snap-center" alt="">
+      <img src="images/team3.jpg" class="w-full md:w-1/3 rounded-xl shadow-md flex-shrink-0 snap-center" alt="">
     </div>
-
     
-    <button id="rightBtn"
-      class="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-[#0BAA92] hover:text-white transition">
-▶
-    </button>
 
   </div>
 </section>
@@ -287,7 +284,7 @@ lg:flex-row lg:justify-between lg:items-center lg:text-left lg:px-10">
 
 
 
-<section class="justify-between items-center w-10/12 px-10 py-10 mx-auto">
+<section class="justify-between items-center w-10/12 px-10 py-10 mx-auto TESTIMONIAL">
     <h2 class="font-bold text-4xl text-[#63E6BE] mb-5">TESTIMONIAL</h2>
 
 
@@ -325,23 +322,23 @@ lg:flex-row lg:justify-between lg:items-center lg:text-left lg:px-10">
   
      
 
-    <div class="flex flex justify-center items-center w-10/12 px-10 py-10 mx-auto my-auto"> 
+    <div class="flex flex justify-center items-center w-10/12 px-10 py-10 mx-auto my-auto "> 
         <div>
             <h2 class="font-bold text-center text-4xl">Get In Touch</h2>
       <div class="from">
-             <fieldset class="fieldset  rounded-xl w-xs p-4 ">
+             <fieldset class="fieldset  rounded-xl lg:w-xs  p-4 ">
 
                 <label class="label"></label>
-  <input type="name" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-120" placeholder="Full Name" />
+  <input type="name" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] lg:w-120 w-100" placeholder="Full Name" />
 
   <label class="label"></label>
-  <input type="email" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-120" placeholder="Email" />
+  <input type="email" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] lg:w-120 w-100" placeholder="Email" />
 
 
   <label class="label"></label>
-  <input type="number" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-120 " placeholder="Phone Number" />
+  <input type="number" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] lg:w-120 w-100 " placeholder="Phone Number" />
 
-  <textarea class="textarea input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-120" placeholder="Message"></textarea>
+  <textarea class="textarea input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] lg:w-120 w-100" placeholder="Message"></textarea>
   <button class="btn  mt-4 text-white bg-[#0baa92] font-semibold">Login</button>
 </div>
 </fieldset>
@@ -367,7 +364,7 @@ lg:flex-row lg:justify-between lg:items-center lg:text-left lg:px-10">
 
   <div class="flex items-center">
    <label class="label"></label>
-  <input type="email" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] w-120" placeholder="Email" />
+  <input type="email" class="input border-2 border-[#0BAA92] font-semibold text-[#0BAA92] lg:w-120 w-60" placeholder="Email" />
   </div>
 
 </section>
